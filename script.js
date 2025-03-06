@@ -54,28 +54,11 @@ document.getElementById("taskInput").addEventListener("keydown", function () {
     //Get the value of the input field and store it in a variable called taskInput
     let taskInput = document.getElementById("taskInput").value;
 
-    //have a function to clear all the tasks
-    function clearAllTasks() {
+    //have a function to clear all the tasks with a button
+    document.getElementById("clearTaskBtn").addEventListener("click", function(){
         tasks = [];
         displayTasks();
-    }
-
-
-    //Check if the taskInput has something in it
-    if (taskInput) {
-        //Create a new object called task with the following properties
-        tasks.push(taskInput);
-        //Clear input field after adding task
-        document.getElementById("taskInput").value = "";
-        //Log the task to the console
-
-        //Call the function to update the list of tasks
-        displayTasks();
-
-    }
-    console.log(tasks);
-}
-});
+    });
 function numberofTasks(){
 document.getElementById("addNumber").innerHTML = tasks.length;
 }
@@ -95,4 +78,4 @@ const toggleDarkMode = () => {
     });
     document.querySelector('header').classList.toggle("dark-mode");
     document.querySelector('footer').classList.toggle("dark-mode");
-  };
+  }}});
