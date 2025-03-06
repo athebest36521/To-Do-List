@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>To-Do List</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/0_ppsGW50Na7fZ4rhl.png">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,7 +17,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
   <body>
@@ -27,7 +28,8 @@
       <div class="container-fluid mt-5">
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-6">
-            <div class="h1 text-center mb-4">To-Do List</div>
+            <div class="h1 text-center mb-4"><img id="checklist" src="imgs/0_ppsGW50Na7fZ4rhl.png">To-Do List</div>
+            <div id="addNumber"></div>
             <div class="row g-2">
               <div class="col-8">
                 <input
@@ -47,6 +49,11 @@
         <button id="clearTaskBtn" class="btn btn-danger mt-3 w-100">Clear All Tasks</button>
           </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+        <button onclick="toggleDarkMode()" class="btn btn-secondary my-4">Toggle Dark Mode</button>
+      </div>
+      </div>
       </div>
     </main>
     <footer>
