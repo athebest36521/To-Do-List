@@ -54,6 +54,13 @@ document.getElementById("taskInput").addEventListener("keydown", function () {
     //Get the value of the input field and store it in a variable called taskInput
     let taskInput = document.getElementById("taskInput").value;
 
+    //have a function to clear all the tasks
+    function clearAllTasks() {
+        tasks = [];
+        displayTasks();
+    }
+
+
     //Check if the taskInput has something in it
     if (taskInput) {
         //Create a new object called task with the following properties
