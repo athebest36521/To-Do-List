@@ -61,16 +61,16 @@ document.getElementById("taskInput").addEventListener("keydown", function (event
             //Clear input field after adding task
             document.getElementById("taskInput").value = "";
             //Log the task to the console
-    
+
             //Call the function to update the list of tasks
             displayTasks();
-    
+
         }
         console.log(tasks);
     }
 }
 );
-document.getElementById("clearTaskBtn").addEventListener("click", function (){
+document.getElementById("clearTaskBtn").addEventListener("click", function () {
     tasks = [];
     displayTasks();
     numberofTasks();
